@@ -14,22 +14,19 @@
     <header>
       <img src="img/logo.png" alt="logo">
       </header>
-       <main id="albums-container">
-         
-        <div v-for="data in database"  class="card">
+      <main id="albums-container">        
+        <div v-for="album in database"  class="card">
             <div class="card-img-wrapper">   
-              <!-- <img :src="{{data.poster }}" alt="album">           -->
+                   <img :src="album.poster" alt="album">  
             </div>
             <div class="card-txt">
-              <span><strong>{{ data.title }}</strong> </span>
-              <span><strong>Autore: </strong></span>
-              <span><strong>Genere: </strong></span>
-              <span><strong>Anno: </strong></span>          
+              <span><strong>{{ album.title }}</strong> </span>
+              <span><strong>{{ album.author }} </strong></span>
+              <span><strong>{{ album.year }} </strong></span>
+              <span><strong>{{ album.genre }}</strong></span>          
             </div>
-          </div>       
-      
+          </div>           
         </main>
-
   </div>
       <script src="js/script.js"></script>
 </body>

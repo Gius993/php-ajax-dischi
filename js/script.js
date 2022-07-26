@@ -9,12 +9,13 @@
 				axios.get('http://localhost:8888/php-ajax-dischi/api.php')
 				.then((dataResponse) =>{
 					this.database = dataResponse.data;
+					console.log(dataResponse);
 				}
 				);
 			},
-			mounted(){
-				this.getDataApi;
-			}
+		},
+		mounted(){
+			this.getDataApi();
 		}
 	}
  );
