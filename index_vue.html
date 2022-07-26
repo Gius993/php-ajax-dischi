@@ -10,25 +10,27 @@
 	<title>Document</title>
 </head>
 <body>
-	<header>
-		<img src="img/logo.png" alt="logo">
-    </header>
-     <main id="albums-container">
-       
-    	<div class="card">
-        	<div class="card-img-wrapper">   
-				<img src="https://images-na.ssl-images-amazon.com/images/I/51sBr4IWDwL.jpg" alt="album">          
+  <div id="root">
+    <header>
+      <img src="img/logo.png" alt="logo">
+      </header>
+       <main id="albums-container">
+         
+        <div v-for="data in database"  class="card">
+            <div class="card-img-wrapper">   
+              <!-- <img :src="{{data.poster }}" alt="album">           -->
             </div>
             <div class="card-txt">
-              
-              <span><strong>Titolo: </strong> </span>
+              <span><strong>{{ data.title }}</strong> </span>
               <span><strong>Autore: </strong></span>
               <span><strong>Genere: </strong></span>
-            	<span><strong>Anno: </strong></span>          
+              <span><strong>Anno: </strong></span>          
             </div>
-        </div>       
-		
-      </main>
+          </div>       
+      
+        </main>
+
+  </div>
       <script src="js/script.js"></script>
 </body>
 </html>
