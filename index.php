@@ -21,9 +21,9 @@
             </div>
             <div class="card-txt">             
               <span><strong><?php echo  $albums['title'];?> </strong> </span>
-              <span><strong>Autore: </strong></span>
-              <span><strong>Genere: </strong></span>
-            	<span><strong>Anno: </strong></span>          
+              <span><strong><?php echo  $albums['author'];?></strong></span>
+              <span><strong><?php echo  $albums['year'];?></strong></span>
+            	<span><strong><?php echo $albums['genre'];?></strong></span>          
             </div>
         </div>       
 		<?php } ?>
