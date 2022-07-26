@@ -14,14 +14,13 @@
 		<img src="img/logo.png" alt="logo">
     </header>
      <main id="albums-container">
-       <?php foreach(){ ?>
+       <?php foreach($database as $albums){ ?>
     	<div class="card">
         	<div class="card-img-wrapper">   
-				<img src="https://images-na.ssl-images-amazon.com/images/I/51sBr4IWDwL.jpg" alt="album">          
+			<?php echo '<img src="' . $albums["poster"] . '" alt="poster">';?>        
             </div>
-            <div class="card-txt">
-              
-              <span><strong>Titolo: </strong> </span>
+            <div class="card-txt">             
+              <span><strong><?php echo  $albums['title'];?> </strong> </span>
               <span><strong>Autore: </strong></span>
               <span><strong>Genere: </strong></span>
             	<span><strong>Anno: </strong></span>          
