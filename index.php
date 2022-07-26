@@ -14,7 +14,7 @@
 		<img src="img/logo.png" alt="logo">
     </header>
      <main id="albums-container">
-       
+       <?php foreach(){ ?>
     	<div class="card">
         	<div class="card-img-wrapper">   
 				<img src="https://images-na.ssl-images-amazon.com/images/I/51sBr4IWDwL.jpg" alt="album">          
@@ -27,7 +27,7 @@
             	<span><strong>Anno: </strong></span>          
             </div>
         </div>       
-		
+		<?php } ?>
       </main>
 </body>
 </html>
